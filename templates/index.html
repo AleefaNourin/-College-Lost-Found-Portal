@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section class="hero">
+        <h2>Find your lost belongings or report what you've found</h2>
+        <div class="actions">
+            <a class="btn" href="{{ url_for('post_item') }}">Post Lost/Found Item</a>
+            <a class="btn" href="{{ url_for('view_items') }}">Browse Posts</a>
+        </div>
+    </section>
+    <section class="contact">
+        <h3>📞 Contact Admin</h3>
+        <p>If you've found an item or need help, please contact:</p>
+        <ul>
+            <li><strong>Email:</strong> admin@campusfound.com</li>
+            <li><strong>Phone:</strong> +91-9876543210</li>
+        </ul>
+    </section>
+{% endblock %}

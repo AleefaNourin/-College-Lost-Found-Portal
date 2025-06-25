@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Post Lost or Found Item</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <label>Title:</label>
+        <input type="text" name="title" required>
+
+        <label>Description:</label>
+        <textarea name="description" required></textarea>
+
+        <label>Type:</label>
+        <select name="type">
+            <option value="lost">Lost</option>
+            <option value="found">Found</option>
+        </select>
+        <label>Contact Info:</label>
+        <input type="text" name="contact_info" required>
+
+        <label>Image:</label>
+        <input type="file" name="image" accept="image/*" required>
+
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
